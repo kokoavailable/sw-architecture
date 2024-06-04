@@ -16,5 +16,5 @@ https://khalilstemmler.com/articles/software-design-architecture/full-stack-soft
 📘 resource
 
 clean code 
-Robert Martin 2008.08
+Robert Martin 2008.08 <br>
 https://github.com/sdcuike/Clean-Code-Collection-Books/blob/master/The.Robert.C.Martin.Clean.Code.Collection.2011.11.pdf
