@@ -27,4 +27,5 @@ https://github.com/sdcuike/Clean-Code-Collection-Books/blob/master/The.Robert.C.
 
 9.references
 
+fastapi-realworld-example-app
 https://github.com/nsidnev/fastapi-realworld-example-app/tree/master
