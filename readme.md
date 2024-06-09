@@ -1,31 +1,22 @@
 🔑 Software design and architecture is a huge topic
-
-
-###
+==================================================
 
 How to Learn Software Design and Architecture | The Full-stack Software Design & Architecture Map
-https://khalilstemmler.com/articles/software-design-architecture/full-stack-software-design/
+----------------------------------------------------------------------------------------------
 
-
-###
+`How to Learn Software Design and Architecture | The Full-stack Software Design & Architecture Map <https://khalilstemmler.com/articles/software-design-architecture/full-stack-software-design/>`_
 
 📍 1. Clean code
+-----------------
 
-###
+📘 Resources
+------------
 
-📘 resources
+*Clean Code* 
+Robert Martin, 2008.08
+`Clean Code PDF <https://github.com/sdcuike/Clean-Code-Collection-Books/blob/master/The.Robert.C.Martin.Clean.Code.Collection.2011.11.pdf>`_
 
-clean code 
-Robert Martin 2008.08 <br>
-https://github.com/sdcuike/Clean-Code-Collection-Books/blob/master/The.Robert.C.Martin.Clean.Code.Collection.2011.11.pdf
+9. References
+-------------
 
-
-
-
-
-###
-
-9.references
-
-fastapi-realworld-example-app <br>
-https://github.com/nsidnev/fastapi-realworld-example-app/tree/master
+`fastapi-realworld-example-app <https://github.com/nsidnev/fastapi-realworld-example-app/tree/master>`_
