@@ -1,0 +1,51 @@
+Dependency Injection
+의존성 주입
+
+Decouple Construction from Runtime +
+생성(객체 생성)과 런타임(사용)의 분리
+Decoupling the construction phase completely from the runtime helps to
+simplify the runtime behaviour.
+객체 생성단계와 객체 사용 단계를 분리하는 것은 런타임 동작을 단순화 하는데 도움이 된다.
+
+객체의 생성은 팩토리, 빌더 패턴 또는 의존성 주입 프레임워크를 통해 처리하고,
+런타임에서는 생성된 객체를 사용한다.
+
+잘못된 DI의 예시
+
+class DatabaseConnection:
+    def connect(self):
+        print("Connecting to the database")
+
+class UserService:
+    def __init__(self):
+        self.db_connection = DatabaseConnection()  # 직접 객체 생성
+
+    def get_user(self, user_id):
+        self.db_connection.connect()
+        print(f"Fetching user {user_id}")
+
+# 사용
+user_service = UserService()
+user_service.get_user(1)
+의존성 주입을 사용하지 않고 직접 디비 객체를 생성하고 있다.
+객체의 생성과 사용이 결합되어 있어 테스트와 유지 보수가 어려워진다.
+
+올바른 DI의 예시
+
+class DatabaseConnection:
+    def connect(self):
+        print("Connecting to the database")
+
+class UserService:
+    def __init__(self, db_connection):
+        self.db_connection = db_connection  # 주입된 객체 사용
+
+    def get_user(self, user_id):
+        self.db_connection.connect()
+        print(f"Fetching user {user_id}")
+
+# 객체 생성과 주입을 분리
+db_connection = DatabaseConnection()
+user_service = UserService(db_connection)
+user_service.get_user(1)
+객체를 외부에서 생성해, User service에 주입한다
